@@ -31,6 +31,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Capitalized using Capitalize category -- %@",capitalized_category);
         
         
+        //Sample
     }
     return 0;
 }
