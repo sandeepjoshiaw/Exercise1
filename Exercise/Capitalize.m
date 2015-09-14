@@ -10,9 +10,9 @@
 
 @implementation Capitalize
 
--(NSString *)capitalize:(NSString *)string{
+-(NSString *)capitalize{
     
-    NSArray *seperate = [string componentsSeparatedByString:@" "]; //seperate the sentence word by word using space.
+    NSArray *seperate = [self.string componentsSeparatedByString:@" "]; //seperate the sentence word by word using space.
     
     NSMutableString *capitalized = [[NSMutableString alloc]init]; // To hold and constantly append capitalized words.
     

@@ -16,23 +16,21 @@ int main(int argc, const char * argv[]) {
         
         NSString *text = @"welcome to airwatch technologies at bangalore"; //The text to be capitalized
        
-        NSLog(@"Original text-- %@", text);
+        NSLog(@"Original text -- %@", text);
         
         Capitalize *Sample = [[Capitalize alloc]init];  // An object of class Capitalize
         
         Sample.string = text;  // Assigning the text to string property
         
-        NSString *capitalized_class = [Sample capitalize:Sample.string]; //Using the method of Capitalize class
+        NSString *capitalized_class = [Sample capitalize]; //Using the method of Capitalize class
         
         NSLog(@"Capitalized using Capitalize class method -- %@",capitalized_class);
         
-        NSString *capitalized_category = [text capitalizeText:text]; //Using method of category Capitalize
+        NSString *capitalized_category = [text capitalizeText]; //Using method of category Capitalize
         
         NSLog(@"Capitalized using Capitalize category -- %@",capitalized_category);
         
-        
-        //Sample
-    }
+        }
     return 0;
 }
 

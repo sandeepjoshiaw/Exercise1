@@ -10,6 +10,6 @@
 
 @interface NSString (CapitalizeText)
 
--(NSString *)capitalizeText :(NSString *)text;
+-(NSString *)capitalizeText;
 
 @end

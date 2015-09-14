@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Capitalize : NSObject
+@interface Capitalize : NSString
 
 @property (nonatomic) NSString * string;
 
--(NSString *)capitalize :(NSString *)string;
+-(NSString *)capitalize;
 
 @end

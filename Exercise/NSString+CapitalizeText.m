@@ -11,25 +11,25 @@
 
 @implementation NSString (CapitalizeText)
 
--(NSString *)capitalizeText :(NSString *)text{
+-(NSString *)capitalizeText{
     
     NSUInteger index = 0;
     NSMutableString *capitalizedText = [[NSMutableString alloc]init];
     unichar ch;
     
     
-    while(index <[text length]){
+    while(index <[self length]){
         
-        ch = [text characterAtIndex:index];
+        ch = [self characterAtIndex:index];
         if(index == 0){
             ch = [[[NSString stringWithCharacters:&ch length:1]uppercaseString]characterAtIndex:0]; // Capitalizing
         }                                                                       //the first character of the sentence.
         
         [capitalizedText appendString:[NSString stringWithCharacters:&ch length:1]]; // Appending the character
         
-        if([text characterAtIndex:index] == ' '){  // when space is encountered, capitalizing the next character,
+        if([self characterAtIndex:index] == ' '){  // when space is encountered, capitalizing the next character,
                                                    // then append to the mutable string.
-            ch = [text characterAtIndex:index+1];
+            ch = [self characterAtIndex:index+1];
             ch = [[[NSString stringWithCharacters:&ch length:1]uppercaseString]characterAtIndex:0];
             [capitalizedText appendString:[NSString stringWithCharacters:&ch length:1]];
             index = index+2; //current char is space, as next char is capitalized and appended, skip the next char.
