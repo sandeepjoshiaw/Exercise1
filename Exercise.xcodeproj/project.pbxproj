@@ -10,6 +10,8 @@
 		64E27B0D1BA689CB008050A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E27B0C1BA689CB008050A2 /* main.m */; };
 		64E27B151BA68E90008050A2 /* Capitalize.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E27B141BA68E90008050A2 /* Capitalize.m */; };
 		64E27B1E1BA69B35008050A2 /* NSString+CapitalizeText.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E27B1D1BA69B35008050A2 /* NSString+CapitalizeText.m */; };
+		64E27B691BA6F4E6008050A2 /* Adult.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E27B661BA6F4E6008050A2 /* Adult.m */; };
+		64E27B6A1BA6F4E6008050A2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E27B681BA6F4E6008050A2 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		64E27B141BA68E90008050A2 /* Capitalize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Capitalize.m; sourceTree = "<group>"; };
 		64E27B1C1BA69B35008050A2 /* NSString+CapitalizeText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CapitalizeText.h"; sourceTree = "<group>"; };
 		64E27B1D1BA69B35008050A2 /* NSString+CapitalizeText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CapitalizeText.m"; sourceTree = "<group>"; };
+		64E27B651BA6F4E6008050A2 /* Adult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adult.h; sourceTree = "<group>"; };
+		64E27B661BA6F4E6008050A2 /* Adult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Adult.m; sourceTree = "<group>"; };
+		64E27B671BA6F4E6008050A2 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		64E27B681BA6F4E6008050A2 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 		64E27B001BA689CB008050A2 = {
 			isa = PBXGroup;
 			children = (
+				64E27B641BA6F4DB008050A2 /* Exercise2 */,
 				64E27B0B1BA689CB008050A2 /* Exercise */,
 				64E27B0A1BA689CB008050A2 /* Products */,
 			);
@@ -70,6 +77,17 @@
 				64E27B141BA68E90008050A2 /* Capitalize.m */,
 			);
 			path = Exercise;
+			sourceTree = "<group>";
+		};
+		64E27B641BA6F4DB008050A2 /* Exercise2 */ = {
+			isa = PBXGroup;
+			children = (
+				64E27B651BA6F4E6008050A2 /* Adult.h */,
+				64E27B661BA6F4E6008050A2 /* Adult.m */,
+				64E27B671BA6F4E6008050A2 /* Person.h */,
+				64E27B681BA6F4E6008050A2 /* Person.m */,
+			);
+			name = Exercise2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64E27B691BA6F4E6008050A2 /* Adult.m in Sources */,
 				64E27B0D1BA689CB008050A2 /* main.m in Sources */,
+				64E27B6A1BA6F4E6008050A2 /* Person.m in Sources */,
 				64E27B1E1BA69B35008050A2 /* NSString+CapitalizeText.m in Sources */,
 				64E27B151BA68E90008050A2 /* Capitalize.m in Sources */,
 			);
@@ -247,6 +267,7 @@
 				64E27B121BA689CB008050A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
