@@ -8,11 +8,12 @@
 
 #import "AppDelegate.h"
 #import "Person.h"
+#import "NewWindowController.h"
 
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
-@property (weak) IBOutlet NSWindow *window1;
+
 
 @end
 
@@ -24,34 +25,15 @@
 
 
 -(IBAction)buttonClick:(id)sender{
-    NSLog(@"Opening window");
-    NSWindowController *myWindow = [[NSWindowController alloc]initWithWindow:_window1];
+   
+    Person *newPerson = [[Person alloc]init];
+    newPerson.FName = @"Peter";
+    newPerson.LName = @"Williams";
+    newPerson.Age = @"20";
     
- // ----------------------- Using Person Object-----------------------------------//
-   // Person *new = [[Person alloc]init];
-   // new.FName = @"Peter";
-   // new.LName = @"Williams";
-  //  new.Age = @"20";
+    _detailWindow = [[NewWindowController alloc]initWithWindowNibName:@"NewWindowController"];
+    [_detailWindow displaytheWindow:newPerson];
     
-   // [_FName setStringValue:new.FName];
-   // [_LName setStringValue:new.LName];
-  //  [_Age setStringValue:new.Age];
-// ----------------------- Using Person Object-----------------------------------//
-    
-// ----------------------- Using Bindings with NSStrings -----------------------------//
-    //self.first_name = @"Sandeep";
-    self.textvalue = _text.stringValue;
-    self.first_name = _text.stringValue;
-    self.last_name = @"Joshi";
-    self.agevalue = @"21";
-// ----------------------- Using Bindings with NSStrings -----------------------------//
-
-    [myWindow showWindow:_window1];
-   // [[myWindow window] makeMainWindow];
-//
-//    [self.window1 becomeMainWindow];
-//
-    NSLog(@"Closing window");
     
 }
 

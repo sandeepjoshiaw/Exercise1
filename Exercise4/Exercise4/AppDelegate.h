@@ -7,21 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "NewWindowController.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 -(IBAction)buttonClick:(id)sender;
 
-@property (nonatomic) IBOutlet NSTextField *FName;
-@property (nonatomic) IBOutlet NSTextField *LName;
-@property (nonatomic) IBOutlet NSTextField *Age;
-
-@property (nonatomic) IBOutlet NSTextField *text;
-@property (nonatomic) NSString *first_name;
-@property (nonatomic) NSString *last_name;
-@property (nonatomic) NSString *agevalue;
-
-@property (nonatomic) NSString *textvalue;
+@property (nonatomic) NewWindowController* detailWindow;
 
 
 @end
