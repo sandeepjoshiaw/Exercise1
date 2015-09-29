@@ -682,7 +682,7 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="AddNew:" target="Voe-Tx-rLC" id="bBS-ov-owH"/>
+                            <action selector="ParsePersonXML:" target="Voe-Tx-rLC" id="jZx-OS-Vfd"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="snw-SB-lA9">
@@ -692,7 +692,7 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="showlist:" target="Voe-Tx-rLC" id="xXU-8a-S9F"/>
+                            <action selector="showlistOfPeopleinTable:" target="Voe-Tx-rLC" id="zwT-sL-9Ak"/>
                         </connections>
                     </button>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5do-Vs-mkA">
@@ -703,7 +703,7 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="Voe-Tx-rLC" name="value" keyPath="msg" id="4Qa-74-fJb"/>
+                            <binding destination="Voe-Tx-rLC" name="value" keyPath="msgAfterParsing" id="jCY-H3-LiD"/>
                         </connections>
                     </textField>
                 </subviews>

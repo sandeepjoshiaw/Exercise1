@@ -13,9 +13,6 @@
 @property (nonatomic, copy) NSString *FName;
 @property (nonatomic, copy) NSString *LName;
 @property (nonatomic, copy) NSString *Age;
-//@property (nonatomic) NSString *Height;
-//@property (nonatomic) NSString *DOB;
-//@property (nonatomic) NSString *Bplace;
 
 -(id)initDetails : (NSString *) Fname
         lastName : (NSString *) Lname

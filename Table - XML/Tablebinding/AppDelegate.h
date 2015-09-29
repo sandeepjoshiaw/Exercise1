@@ -8,17 +8,19 @@
 
 #import <Cocoa/Cocoa.h>
 #import "Person.h"
-#import "table.h"
+#import "PersonTableViewController.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (nonatomic) Person *person;
 @property (nonatomic) NSMutableArray *People;
-@property (nonatomic) table *table;
-@property (nonatomic) NSMutableArray *example;
-@property (nonatomic) NSString *msg;
--(IBAction)AddNew:(id)sender;
--(IBAction)showlist:(id)sender;
+@property (nonatomic) PersonTableViewController *listOfPeople;
+@property (nonatomic) NSMutableArray *parsedPersonObjects;
+@property (nonatomic) NSString *msgAfterParsing;
+
+
+-(IBAction)ParsePersonXML  :(id)sender;
+-(IBAction)showlistOfPeopleinTable :(id)sender;
 
 @end
 

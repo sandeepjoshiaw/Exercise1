@@ -6,12 +6,12 @@
 //  Copyright (c) 2015 Sandeep Joshi. All rights reserved.
 //
 
-#import "Personparser.h"
+#import "PersonXMLParser.h"
 #import "Person.h"
 
-@interface Personparser ()
+@interface PersonXMLParser ()
 
-@property NSXMLParser *parser;
+
 @property NSString *element;
 
 
@@ -21,18 +21,12 @@
 
 @end
 
-@implementation Personparser
+@implementation PersonXMLParser
 
--(id)initWithArray : (NSMutableArray *) personArray{
-    
-    self = [super init];
-    if(self){
-        self.personArray = personArray;
-    }
-    return self;
-}
 
 -(void)parseXMLFile{
+    
+    self.personArray = [[NSMutableArray alloc]init];
     
     NSURL *xmlPath = [[NSBundle mainBundle] URLForResource:@"Person"
                                              withExtension:@"xml"];
@@ -85,21 +79,8 @@ foundCharacters:(NSString *)string{
                                                 Age:self.currentAge];
         [self.personArray addObject:person];
     }
-    
-    self.element = nil;
-    
+         self.element = nil;
 }
 
-
-
-//-(void)displayContents{
-//    
-//    Person *p = [[Person alloc]init];
-//    for (p in self.personArray){
-//        
-//        NSLog(@" Parser --- %@, %@, %@",p.FName, p.LName,p.Age);
-//    }
-//    
-//}
 
 @end

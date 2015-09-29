@@ -8,53 +8,42 @@
 
 #import "AppDelegate.h"
 #import "Person.h"
-#import "table.h"
-#import "Personparser.h"
+#import "PersonTableViewController.h"
+#import "PersonXMLParser.h"
 
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
 @end
 
-Personparser *parser;
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
-   // self.person = [[Person alloc]init];
-    //self.People = [[NSMutableArray alloc]init];
-    //self.table = [[table alloc]initWithWindowNibName:@"table"];
     
-    
-   
 }
 
 
--(IBAction)AddNew:(id)sender{
+-(IBAction)ParsePersonXML:(id)sender{
     
-    self.example = [[NSMutableArray alloc]init];
-    Personparser *parser = [[Personparser alloc]initWithArray:self.example];
+    self.parsedPersonObjects = [[NSMutableArray  alloc]init];
+    PersonXMLParser *parser =  [[PersonXMLParser alloc]init];
     NSLog(@"Parsing...");
     [parser parseXMLFile];
-    self.example = [parser personArray];
-  
-    NSLog(@"%lu no of people",(unsigned long)[[parser personArray] count]);
-    NSMutableArray *xmldata = [[NSMutableArray alloc]init];
-    xmldata = [parser personArray];
-    self.msg = @"The XML file is parsed... you can view the list.";
     
-        Person *pa = [[Person alloc]init];
-        for (pa in self.example){
+    self.parsedPersonObjects = [parser personArray];
+    self.msgAfterParsing = @"The XML file is parsed... you can view the list.";
+    
+        for (Person *pa in self.parsedPersonObjects){
             NSLog(@" Parser onclick --- %@, %@, %@",pa.FName, pa.LName,pa.Age);
         }
-    
 }
 
--(IBAction)showlist:(id)sender{
-    self.table = [[table alloc]initWithWindowNibName:@"table"];
-    [self.table showTable:self.example];
+-(IBAction)showlistOfPeopleinTable:(id)sender{
+    self.listOfPeople = [[PersonTableViewController alloc]initWithWindowNibName:@"PersonTableView"];
+    [self.listOfPeople showlistOfPeopleinTableview:self.parsedPersonObjects];
 }
+
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
 }

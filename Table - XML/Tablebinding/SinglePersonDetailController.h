@@ -9,11 +9,12 @@
 #import <Cocoa/Cocoa.h>
 #import "Person.h"
 
-@interface Details : NSWindowController
+@interface SinglePersonDetailController : NSWindowController
 
 @property (nonatomic) Person *person;
 @property (nonatomic) NSMutableArray *people;
+@property (nonatomic) NSArray *selectedPeople;
 
--(void)showDetails :(NSIndexSet *)index list :(NSMutableArray *) list;
+-(void)showSinglePersonDetails :(NSIndexSet *)selectedIndexes listOfPeople :(NSMutableArray *) listOfPeople;
 
 @end

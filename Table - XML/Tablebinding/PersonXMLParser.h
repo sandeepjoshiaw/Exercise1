@@ -8,14 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Personparser : NSObject <NSXMLParserDelegate>
+@interface PersonXMLParser : NSObject <NSXMLParserDelegate>
 
 @property (nonatomic) NSMutableArray *personArray;
-
--(id)initWithArray : (NSMutableArray *) personArray;
+@property (nonatomic) NSXMLParser    *parser;
 
 -(void)parseXMLFile;
-
--(void)displayContents;
 
 @end

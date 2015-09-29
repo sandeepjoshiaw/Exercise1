@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		648806D21BB8FB5700C058C2 /* table.m in Sources */ = {isa = PBXBuildFile; fileRef = 648806D01BB8FB5700C058C2 /* table.m */; };
-		648806D31BB8FB5700C058C2 /* table.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648806D11BB8FB5700C058C2 /* table.xib */; };
-		648806D71BB900C800C058C2 /* Details.m in Sources */ = {isa = PBXBuildFile; fileRef = 648806D51BB900C800C058C2 /* Details.m */; };
-		648806D81BB900C800C058C2 /* Details.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648806D61BB900C800C058C2 /* Details.xib */; };
+		648806D21BB8FB5700C058C2 /* PersonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 648806D01BB8FB5700C058C2 /* PersonTableViewController.m */; };
+		648806D31BB8FB5700C058C2 /* PersonTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648806D11BB8FB5700C058C2 /* PersonTableView.xib */; };
+		648806D71BB900C800C058C2 /* SinglePersonDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 648806D51BB900C800C058C2 /* SinglePersonDetailController.m */; };
+		648806D81BB900C800C058C2 /* SinglePersonDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648806D61BB900C800C058C2 /* SinglePersonDetailView.xib */; };
 		648806DA1BB93D3200C058C2 /* Person.xml in Resources */ = {isa = PBXBuildFile; fileRef = 648806D91BB93D3200C058C2 /* Person.xml */; };
-		648806DD1BB9458800C058C2 /* Personparser.m in Sources */ = {isa = PBXBuildFile; fileRef = 648806DC1BB9458800C058C2 /* Personparser.m */; };
+		648806DD1BB9458800C058C2 /* PersonXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 648806DC1BB9458800C058C2 /* PersonXMLParser.m */; };
 		64F1107D1BB8F6740048ED71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F1107C1BB8F6740048ED71 /* AppDelegate.m */; };
 		64F1107F1BB8F6740048ED71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F1107E1BB8F6740048ED71 /* main.m */; };
 		64F110811BB8F6740048ED71 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64F110801BB8F6740048ED71 /* Images.xcassets */; };
@@ -32,15 +32,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		648806CF1BB8FB5700C058C2 /* table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table.h; sourceTree = "<group>"; };
-		648806D01BB8FB5700C058C2 /* table.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = table.m; sourceTree = "<group>"; };
-		648806D11BB8FB5700C058C2 /* table.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = table.xib; sourceTree = "<group>"; };
-		648806D41BB900C800C058C2 /* Details.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Details.h; sourceTree = "<group>"; };
-		648806D51BB900C800C058C2 /* Details.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Details.m; sourceTree = "<group>"; };
-		648806D61BB900C800C058C2 /* Details.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Details.xib; sourceTree = "<group>"; };
+		648806CF1BB8FB5700C058C2 /* PersonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonTableViewController.h; sourceTree = "<group>"; };
+		648806D01BB8FB5700C058C2 /* PersonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonTableViewController.m; sourceTree = "<group>"; };
+		648806D11BB8FB5700C058C2 /* PersonTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonTableView.xib; sourceTree = "<group>"; };
+		648806D41BB900C800C058C2 /* SinglePersonDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinglePersonDetailController.h; sourceTree = "<group>"; };
+		648806D51BB900C800C058C2 /* SinglePersonDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinglePersonDetailController.m; sourceTree = "<group>"; };
+		648806D61BB900C800C058C2 /* SinglePersonDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SinglePersonDetailView.xib; sourceTree = "<group>"; };
 		648806D91BB93D3200C058C2 /* Person.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Person.xml; sourceTree = "<group>"; };
-		648806DB1BB9458800C058C2 /* Personparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Personparser.h; sourceTree = "<group>"; };
-		648806DC1BB9458800C058C2 /* Personparser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Personparser.m; sourceTree = "<group>"; };
+		648806DB1BB9458800C058C2 /* PersonXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonXMLParser.h; sourceTree = "<group>"; };
+		648806DC1BB9458800C058C2 /* PersonXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonXMLParser.m; sourceTree = "<group>"; };
 		64F110761BB8F6740048ED71 /* Tablebinding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tablebinding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64F1107A1BB8F6740048ED71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64F1107B1BB8F6740048ED71 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -96,16 +96,16 @@
 			children = (
 				64F110A01BB8F7880048ED71 /* Person.h */,
 				64F1109E1BB8F7810048ED71 /* Person.m */,
-				648806DB1BB9458800C058C2 /* Personparser.h */,
-				648806DC1BB9458800C058C2 /* Personparser.m */,
+				648806DB1BB9458800C058C2 /* PersonXMLParser.h */,
+				648806DC1BB9458800C058C2 /* PersonXMLParser.m */,
 				64F1107B1BB8F6740048ED71 /* AppDelegate.h */,
 				64F1107C1BB8F6740048ED71 /* AppDelegate.m */,
-				648806CF1BB8FB5700C058C2 /* table.h */,
-				648806D01BB8FB5700C058C2 /* table.m */,
-				648806D41BB900C800C058C2 /* Details.h */,
-				648806D51BB900C800C058C2 /* Details.m */,
-				648806D61BB900C800C058C2 /* Details.xib */,
-				648806D11BB8FB5700C058C2 /* table.xib */,
+				648806CF1BB8FB5700C058C2 /* PersonTableViewController.h */,
+				648806D01BB8FB5700C058C2 /* PersonTableViewController.m */,
+				648806D41BB900C800C058C2 /* SinglePersonDetailController.h */,
+				648806D51BB900C800C058C2 /* SinglePersonDetailController.m */,
+				648806D61BB900C800C058C2 /* SinglePersonDetailView.xib */,
+				648806D11BB8FB5700C058C2 /* PersonTableView.xib */,
 				64F110801BB8F6740048ED71 /* Images.xcassets */,
 				64F110821BB8F6740048ED71 /* MainMenu.xib */,
 				64F110791BB8F6740048ED71 /* Supporting Files */,
@@ -222,9 +222,9 @@
 			files = (
 				64F110811BB8F6740048ED71 /* Images.xcassets in Resources */,
 				64F110841BB8F6740048ED71 /* MainMenu.xib in Resources */,
-				648806D81BB900C800C058C2 /* Details.xib in Resources */,
+				648806D81BB900C800C058C2 /* SinglePersonDetailView.xib in Resources */,
 				648806DA1BB93D3200C058C2 /* Person.xml in Resources */,
-				648806D31BB8FB5700C058C2 /* table.xib in Resources */,
+				648806D31BB8FB5700C058C2 /* PersonTableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,10 +243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				64F1109F1BB8F7810048ED71 /* Person.m in Sources */,
-				648806DD1BB9458800C058C2 /* Personparser.m in Sources */,
+				648806DD1BB9458800C058C2 /* PersonXMLParser.m in Sources */,
 				64F1107F1BB8F6740048ED71 /* main.m in Sources */,
-				648806D71BB900C800C058C2 /* Details.m in Sources */,
-				648806D21BB8FB5700C058C2 /* table.m in Sources */,
+				648806D71BB900C800C058C2 /* SinglePersonDetailController.m in Sources */,
+				648806D21BB8FB5700C058C2 /* PersonTableViewController.m in Sources */,
 				64F1107D1BB8F6740048ED71 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
