@@ -1,0 +1,22 @@
+[
+  {
+    "fname" : "Person1",
+    "lname" : "last1",
+    "age" : "20"
+  },
+  {
+    "fname" : "Person2",
+    "lname" : "last2",
+    "age" : "23"
+  },
+  {
+    "fname" : "Person3",
+    "lname" : "last3",
+    "age" : "25"
+  },
+  {
+    "fname" : "Person4",
+    "lname" : "last4",
+    "age" : "28"
+  }
+]

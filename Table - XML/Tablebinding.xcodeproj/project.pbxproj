@@ -13,6 +13,8 @@
 		648806D81BB900C800C058C2 /* SinglePersonDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648806D61BB900C800C058C2 /* SinglePersonDetailView.xib */; };
 		648806DA1BB93D3200C058C2 /* Person.xml in Resources */ = {isa = PBXBuildFile; fileRef = 648806D91BB93D3200C058C2 /* Person.xml */; };
 		648806DD1BB9458800C058C2 /* PersonXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 648806DC1BB9458800C058C2 /* PersonXMLParser.m */; };
+		648806E01BBA763F00C058C2 /* JSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 648806DF1BBA763F00C058C2 /* JSONParser.m */; };
+		648806E21BBA768C00C058C2 /* PersonJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 648806E11BBA768C00C058C2 /* PersonJson.json */; };
 		64F1107D1BB8F6740048ED71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F1107C1BB8F6740048ED71 /* AppDelegate.m */; };
 		64F1107F1BB8F6740048ED71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F1107E1BB8F6740048ED71 /* main.m */; };
 		64F110811BB8F6740048ED71 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64F110801BB8F6740048ED71 /* Images.xcassets */; };
@@ -41,6 +43,9 @@
 		648806D91BB93D3200C058C2 /* Person.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Person.xml; sourceTree = "<group>"; };
 		648806DB1BB9458800C058C2 /* PersonXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonXMLParser.h; sourceTree = "<group>"; };
 		648806DC1BB9458800C058C2 /* PersonXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonXMLParser.m; sourceTree = "<group>"; };
+		648806DE1BBA763F00C058C2 /* JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParser.h; sourceTree = "<group>"; };
+		648806DF1BBA763F00C058C2 /* JSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONParser.m; sourceTree = "<group>"; };
+		648806E11BBA768C00C058C2 /* PersonJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PersonJson.json; sourceTree = "<group>"; };
 		64F110761BB8F6740048ED71 /* Tablebinding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tablebinding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64F1107A1BB8F6740048ED71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64F1107B1BB8F6740048ED71 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +109,8 @@
 				648806D01BB8FB5700C058C2 /* PersonTableViewController.m */,
 				648806D41BB900C800C058C2 /* SinglePersonDetailController.h */,
 				648806D51BB900C800C058C2 /* SinglePersonDetailController.m */,
+				648806DE1BBA763F00C058C2 /* JSONParser.h */,
+				648806DF1BBA763F00C058C2 /* JSONParser.m */,
 				648806D61BB900C800C058C2 /* SinglePersonDetailView.xib */,
 				648806D11BB8FB5700C058C2 /* PersonTableView.xib */,
 				64F110801BB8F6740048ED71 /* Images.xcassets */,
@@ -116,6 +123,7 @@
 		64F110791BB8F6740048ED71 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				648806E11BBA768C00C058C2 /* PersonJson.json */,
 				648806D91BB93D3200C058C2 /* Person.xml */,
 				64F1107A1BB8F6740048ED71 /* Info.plist */,
 				64F1107E1BB8F6740048ED71 /* main.m */,
@@ -220,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				648806E21BBA768C00C058C2 /* PersonJson.json in Resources */,
 				64F110811BB8F6740048ED71 /* Images.xcassets in Resources */,
 				64F110841BB8F6740048ED71 /* MainMenu.xib in Resources */,
 				648806D81BB900C800C058C2 /* SinglePersonDetailView.xib in Resources */,
@@ -242,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				648806E01BBA763F00C058C2 /* JSONParser.m in Sources */,
 				64F1109F1BB8F7810048ED71 /* Person.m in Sources */,
 				648806DD1BB9458800C058C2 /* PersonXMLParser.m in Sources */,
 				64F1107F1BB8F6740048ED71 /* main.m in Sources */,

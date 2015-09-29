@@ -15,6 +15,7 @@
 @property (nonatomic) NSMutableArray *people;
 @property (nonatomic) NSArray *selectedPeople;
 
--(void)showSinglePersonDetails :(NSIndexSet *)selectedIndexes listOfPeople :(NSMutableArray *) listOfPeople;
+-(void)showSinglePersonDetails :(NSIndexSet *)selectedIndexes
+                  listOfPeople :(NSMutableArray *) listOfPeople;
 
 @end

@@ -17,9 +17,13 @@
 @property (nonatomic) PersonTableViewController *listOfPeople;
 @property (nonatomic) NSMutableArray *parsedPersonObjects;
 @property (nonatomic) NSString *msgAfterParsing;
+@property (nonatomic) NSString *msgAfterparsingJson;
+@property (nonatomic) NSMutableArray *ParsedJSONObjects;
+@property (nonatomic) BOOL XML_Flag;
 
 
 -(IBAction)ParsePersonXML  :(id)sender;
+-(IBAction)ParseJSON       :(id)sender;
 -(IBAction)showlistOfPeopleinTable :(id)sender;
 
 @end

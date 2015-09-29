@@ -10,6 +10,7 @@
 #import "Person.h"
 #import "PersonTableViewController.h"
 #import "PersonXMLParser.h"
+#import "JSONParser.h"
 
 @interface AppDelegate ()
 
@@ -32,16 +33,31 @@
     [parser parseXMLFile];
     
     self.parsedPersonObjects = [parser personArray];
-    self.msgAfterParsing = @"The XML file is parsed... you can view the list.";
+    self.msgAfterParsing = @"The XML file is parsed... you can view the list";
     
         for (Person *pa in self.parsedPersonObjects){
             NSLog(@" Parser onclick --- %@, %@, %@",pa.FName, pa.LName,pa.Age);
         }
+    self.XML_Flag = YES;
+    }
+
+-(IBAction)ParseJSON:(id)sender{
+    
+    JSONParser *Parser = [[JSONParser alloc]init];
+    [Parser JSONParser];
+    self.msgAfterparsingJson = @"The JSON File is parsed... You can now view the list";
+    self.ParsedJSONObjects = [Parser ParsedJSONData];
+    self.XML_Flag = NO;
 }
 
 -(IBAction)showlistOfPeopleinTable:(id)sender{
     self.listOfPeople = [[PersonTableViewController alloc]initWithWindowNibName:@"PersonTableView"];
-    [self.listOfPeople showlistOfPeopleinTableview:self.parsedPersonObjects];
+    if(self.XML_Flag){
+        [self.listOfPeople showlistOfPeopleinTableview:self.parsedPersonObjects];
+    }
+    else if (! self.XML_Flag){
+        [self.listOfPeople showlistOfPeopleinTableview:self.ParsedJSONObjects];
+    }
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
