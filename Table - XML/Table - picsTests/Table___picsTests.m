@@ -1,19 +1,19 @@
 //
-//  TablebindingTests.m
-//  TablebindingTests
+//  Table___picsTests.m
+//  Table - picsTests
 //
-//  Created by Sandeep Joshi on 28/09/15.
+//  Created by Sandeep Joshi on 29/09/15.
 //  Copyright (c) 2015 Sandeep Joshi. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
 #import <XCTest/XCTest.h>
 
-@interface TablebindingTests : XCTestCase
+@interface Table___picsTests : XCTestCase
 
 @end
 
-@implementation TablebindingTests
+@implementation Table___picsTests
 
 - (void)setUp {
     [super setUp];

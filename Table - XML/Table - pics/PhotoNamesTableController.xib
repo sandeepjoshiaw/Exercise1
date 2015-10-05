@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="table">
+        <customObject id="-2" userLabel="File's Owner" customClass="PhotoNamesTableController">
             <connections>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
@@ -20,65 +20,43 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oa-x6-nLs">
-                        <rect key="frame" x="73" y="54" width="361" height="196"/>
-                        <clipView key="contentView" misplaced="YES" id="NM2-h9-6rw">
+                    <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFn-Qb-R0e">
+                        <rect key="frame" x="120" y="20" width="254" height="237"/>
+                        <clipView key="contentView" misplaced="YES" id="tv0-2R-Y98">
                             <rect key="frame" x="1" y="17" width="238" height="117"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" autosaveColumns="NO" headerView="EH6-Ng-gC5" id="cjD-bK-cXL">
+                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="Syl-FG-bud" id="Os6-qY-yjF">
                                     <rect key="frame" x="0.0" y="0.0" width="238" height="117"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                     <tableColumns>
-                                        <tableColumn width="116" minWidth="40" maxWidth="1000" id="LR4-Jt-AcB">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
+                                        <tableColumn editable="NO" width="249" minWidth="40" maxWidth="1000" id="JQY-hA-EcY">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Photo Names">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                             </tableHeaderCell>
-                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="3bu-YT-NQL">
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="justified" title="Text Cell" id="VFk-XJ-9CL">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                <connections>
-                                                    <binding destination="Qt4-bo-ZjI" name="value" keyPath="selection.FName" id="Eep-bd-l1Q"/>
-                                                </connections>
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <connections>
-                                                <binding destination="Qt4-bo-ZjI" name="value" keyPath="arrangedObjects.FName" id="M1C-Fm-jH1"/>
-                                            </connections>
-                                        </tableColumn>
-                                        <tableColumn width="237" minWidth="40" maxWidth="1000" id="E8Y-03-tAy">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
-                                                <font key="font" metaFont="smallSystem"/>
-                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
-                                            </tableHeaderCell>
-                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="ncN-H5-yAT">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                <connections>
-                                                    <binding destination="Qt4-bo-ZjI" name="value" keyPath="selection.LName" id="AcT-hZ-OMk"/>
-                                                </connections>
-                                            </textFieldCell>
-                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                            <connections>
-                                                <binding destination="Qt4-bo-ZjI" name="value" keyPath="arrangedObjects.LName" id="pLe-QP-Jh4"/>
+                                                <binding destination="7kT-EV-qdC" name="value" keyPath="arrangedObjects.self" id="RR4-oL-1Lw"/>
                                             </connections>
                                         </tableColumn>
                                     </tableColumns>
                                     <connections>
-                                        <binding destination="Qt4-bo-ZjI" name="doubleClickArgument" keyPath="selectionIndexes" id="dWb-71-Lfp">
+                                        <binding destination="7kT-EV-qdC" name="doubleClickArgument" keyPath="selectionIndexes" id="Iim-fx-mZx">
                                             <dictionary key="options">
                                                 <string key="NSSelectorName">doubleClick:</string>
                                             </dictionary>
                                         </binding>
-                                        <binding destination="-2" name="doubleClickTarget" keyPath="self" previousBinding="dWb-71-Lfp" id="NTv-Ij-xr0">
+                                        <binding destination="-2" name="doubleClickTarget" keyPath="self" previousBinding="Iim-fx-mZx" id="4D6-DD-Uv2">
                                             <dictionary key="options">
                                                 <string key="NSSelectorName">doubleClick:</string>
                                             </dictionary>
@@ -88,15 +66,15 @@
                             </subviews>
                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </clipView>
-                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="PdK-sI-Skp">
-                            <rect key="frame" x="1" y="119" width="223" height="15"/>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="jIs-wc-sSa">
+                            <rect key="frame" x="1" y="101.13550055027008" width="198.57489776611328" height="15"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
-                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="FO2-5p-2zF">
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="5i2-5f-fhQ">
                             <rect key="frame" x="224" y="17" width="15" height="102"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
-                        <tableHeaderView key="headerView" id="EH6-Ng-gC5">
+                        <tableHeaderView key="headerView" id="Syl-FG-bud">
                             <rect key="frame" x="0.0" y="0.0" width="238" height="17"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </tableHeaderView>
@@ -106,16 +84,16 @@
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
             </connections>
+            <point key="canvasLocation" x="227" y="241"/>
         </window>
-        <arrayController objectClassName="Person" id="Qt4-bo-ZjI">
+        <arrayController objectClassName="AppDelegate" id="7kT-EV-qdC">
             <declaredKeys>
-                <string>Fname</string>
-                <string>Lname</string>
+                <string>picName</string>
             </declaredKeys>
             <connections>
-                <binding destination="-2" name="contentArray" keyPath="self.people" id="Vpa-F4-BUF"/>
+                <binding destination="-2" name="contentArray" keyPath="photoNames" id="4WR-jP-aOG"/>
             </connections>
         </arrayController>
-        <userDefaultsController representsSharedInstance="YES" id="S6W-LD-8es"/>
+        <userDefaultsController representsSharedInstance="YES" id="dkJ-5a-cqW"/>
     </objects>
 </document>
